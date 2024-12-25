@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Generator AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Random Generator AI</h1>
+        
+        <div class="selection-area">
+            <select id="choice" class="choice-select">
+                <option value="" disabled selected>Select an option</option>
+                <option value="1">Random Color</option>
+                <option value="2">Random Food</option>
+                <option value="3">Random Country</option>
+                <option value="4">Random Movie</option>
+                <option value="5">Random Animal</option>
+            </select>
+            
+            <button onclick="getRandomResult()" class="generate-btn">Generate</button>
+            <button onclick="resetPage()" class="reset-btn">Try Again</button>
+        </div>
+
+        <div id="result" class="result-area"></div>
+    </div>
+
+    <script>
+        function getRandomResult() {
+            const choice = document.getElementById('choice').value;
+            if (!choice) return;
+
+            fetch(`/get_random/${choice}`)
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('result').innerHTML = data.message;
+                });
+        }
+
+        function resetPage() {
+            document.getElementById('choice').value = "";
+            document.getElementById('result').innerHTML = "";
+        }
+    </script>
+</body>
+</html> 
