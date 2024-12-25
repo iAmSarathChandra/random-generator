@@ -12,4 +12,4 @@ Entertainment and Virtual Companionship – Provide AI-generated characters for 
 Language Learning – Enhance language skills by using AI voices for interactive practice and pronunciation.
 This AI-powered tool opens doors to a world of creative and emotional possibilities, making voice technology more accessible and impactful.
 
-Explore more at https://speakingcharactera.ai
+Explore more at https://speakingcharacter.ai
