@@ -10,14 +10,14 @@ with open("requirements.txt", encoding="utf-8") as f:
     requirements = f.read().splitlines()
 
 setup(
-    name="speaking-character-ai",
-    version="0.1.0",
+    name="Speaking-character-ai",
+    version="0.1.2",
     author="Speaking Character AI",
     author_email="contact@speakingcharacter.ai",
     description="A Speaking Character AI is a Python library designed to create virtual characters capable of engaging in interactive conversations. It can synthesize speech, generate text-based dialogue, and animate expressions or gestures in response to user inputs, enhancing the user experience in applications such as games, virtual assistants, and storytelling platforms.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://speaingcharacter.ai/",
+    url="https://speakingcharacter.ai/",
     package_dir={"": "src"},
     packages=find_packages(where="src"),
     classifiers=[
