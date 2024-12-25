@@ -14,10 +14,10 @@ setup(
     version="0.1.0",
     author="Speaking Character AI",
     author_email="contact@speakingcharacter.ai",
-    description="A Flask-based web application for generating random responses with a beautiful interface",
+    description="A Speaking Character AI is a Python library designed to create virtual characters capable of engaging in interactive conversations. It can synthesize speech, generate text-based dialogue, and animate expressions or gestures in response to user inputs, enhancing the user experience in applications such as games, virtual assistants, and storytelling platforms.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/speaking-character-ai/speaking-character-ai",
+    url="https://speaingcharacter.ai/",
     package_dir={"": "src"},
     packages=find_packages(where="src"),
     classifiers=[
